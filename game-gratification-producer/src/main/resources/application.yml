@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    stream:
+      default-binder: kafka
+      bindings:
+        output:
+          binder: kafka
+          destination: online-user-game
+          useNativeEncoding: true
